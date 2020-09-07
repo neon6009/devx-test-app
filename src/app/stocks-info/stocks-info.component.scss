@@ -1,0 +1,44 @@
+.main {
+    display: flex;
+    flex-direction: row;
+
+    .statistic-part {
+        width: 50vw;
+
+        .chart {
+            height: 50%;
+            .options {
+                .caption {
+                    margin: 10px auto;
+                }
+                .option {
+                    label {
+                        margin-top: 10px;
+                        margin-left: 50px;
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+
+        .websocket {
+            border: 1px solid #212529;
+            color: #f45b5b;
+            margin: 100px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .title {
+                color: #212529;
+            }
+        }
+    }
+
+    .grid-part {
+        width: 50vw;
+    }
+}
+
+::ng-deep #gridContainer .dx-datagrid-content tr.dx-data-row {
+    cursor: pointer;
+}
